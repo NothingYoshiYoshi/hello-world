@@ -1,0 +1,31 @@
+name: Lint with flake8
+
+on:
+  push:
+    paths: ["**.py"]
+  pull_request:
+    paths: ["**.py"]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install flake8
+      run: pip install flake8
+
+    - name: Run flake8
+      run: |
+        flake8 . > flake8_report.txt || true
+
+    - name: Upload report
+      uses: actions/upload-artifact@v4
+      with:
+        name: flake8-report
+        path: flake8_report.txt
