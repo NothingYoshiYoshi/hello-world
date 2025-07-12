@@ -10,4 +10,4 @@ title: "ソフトウェア工学　2025"
 
 git/github演習
 
-川の流れのように
+[softwareEng Lecture Notes](softwaerEng2025.md)
