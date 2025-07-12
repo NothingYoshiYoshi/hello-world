@@ -1,6 +1,6 @@
 ---
-layout:page
-title: "software Eng. lecture note
+layout: page
+title: "software Eng. lecture note"
 permalink: /docs/softwareEng2025
 ---
 
