@@ -72,3 +72,9 @@ permalink: /docs/softwareEng2025
 - CI:Continuous Integration
 - コード変更を共有リポジトリに頻繁に統合するプロセスで、自動テストとビルドを定期的に実行し、バグの早期発見と修正を可能にする
 - CD:Continuous Delivery
+- コード変更をテスト環境や本番環境に自動的にデプロイするプロセス
+- flake8を使用
+
+##　第13回：CI/CDの実践
+- Githubにあるリモートレポジトリの内容をwebpageとして公開することができる。更新はCI/CDにより自動化
+- Jekyll
